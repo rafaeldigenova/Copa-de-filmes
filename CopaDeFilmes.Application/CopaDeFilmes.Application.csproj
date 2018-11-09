@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CopaDeFilmes.Domain\CopaDeFilmes.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

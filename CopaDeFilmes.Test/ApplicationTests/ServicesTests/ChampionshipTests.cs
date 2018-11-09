@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CopaDeFilmes.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class ChampionshipTests
     {
         [TestMethod]
         public void TestMethod1()
