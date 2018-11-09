@@ -9,7 +9,7 @@ namespace CopaDeFilmes.Domain.Entities
 {
     public class Round : IRound
     {
-        private ICollection<IMovie> Movies { get; set; }
+        public ICollection<IMovie> Movies { get; set; }
         public ICollection<IMatch> Matches { get; set; }
         public RoundType Type { get; set; }
 

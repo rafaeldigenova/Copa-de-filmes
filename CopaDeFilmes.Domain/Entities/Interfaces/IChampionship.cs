@@ -10,6 +10,6 @@ namespace CopaDeFilmes.Domain.Entities.Interfaces
 
         ICollection<IChampionshipMovie> ChampionshipMovies { get; set; }
 
-        void Play();
+        IRound Play();
     }
 }

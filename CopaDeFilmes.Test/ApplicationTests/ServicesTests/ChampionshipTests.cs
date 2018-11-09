@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CopaDeFilmes.Test
+namespace CopaDeFilmes.Test.ApplicationTests.ServiceTests
 {
     [TestClass]
     public class ChampionshipTests
