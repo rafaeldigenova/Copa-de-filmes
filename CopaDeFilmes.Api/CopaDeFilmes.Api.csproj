@@ -14,7 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CopaDeFilmes.Application\CopaDeFilmes.Application.csproj" />
     <ProjectReference Include="..\CopaDeFilmes.DI\CopaDeFilmes.DI.csproj" />
+    <ProjectReference Include="..\CopaDeFilmes.Domain\CopaDeFilmes.Domain.csproj" />
   </ItemGroup>
 
 </Project>

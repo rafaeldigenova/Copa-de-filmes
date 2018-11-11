@@ -28,6 +28,8 @@ namespace CopaDeFilmes.Api
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            services.AddCors();
+
             DependencyInjection.ConfigureServices(services);
         }
 
@@ -43,7 +45,9 @@ namespace CopaDeFilmes.Api
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            app.UseCors(builder =>
+                builder.WithOrigins("*"));
+
             app.UseMvc();
         }
     }

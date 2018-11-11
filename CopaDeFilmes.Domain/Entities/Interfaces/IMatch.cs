@@ -10,6 +10,7 @@ namespace CopaDeFilmes.Domain.Entities.Interfaces
         IMovie MovieB { get; set; }
 
         IMovie Winner { get; set; }
+        IMovie Loser { get; set; }
 
         IMovie PlayMatch();
     }

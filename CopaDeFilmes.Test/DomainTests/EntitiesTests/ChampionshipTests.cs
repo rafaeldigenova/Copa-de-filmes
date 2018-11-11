@@ -1,4 +1,5 @@
 using CopaDeFilmes.Domain.Entities;
+using CopaDeFilmes.Domain.Entities.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,3 +44,4 @@ namespace CopaDeFilmes.Test
 
     }
 }
+

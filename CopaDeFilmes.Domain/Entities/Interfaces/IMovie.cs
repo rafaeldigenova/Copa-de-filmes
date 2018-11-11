@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CopaDeFilmes.Domain.Entities
+namespace CopaDeFilmes.Domain.Entities.Interfaces
 {
     public interface IMovie
     {

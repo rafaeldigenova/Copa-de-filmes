@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
+using CopaDeFilmes.Domain.Entities.Interfaces;
 
 namespace CopaDeFilmes.Domain.Entities
 {

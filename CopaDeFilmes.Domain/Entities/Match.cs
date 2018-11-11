@@ -10,7 +10,9 @@ namespace CopaDeFilmes.Domain.Entities
     {
         public IMovie MovieA { get; set; }
         public IMovie MovieB { get; set; }
+
         public IMovie Winner { get; set; }
+        public IMovie Loser { get; set; }
 
         public DateTime? MatchDate { get; set; }
 
@@ -23,6 +25,7 @@ namespace CopaDeFilmes.Domain.Entities
         public IMovie PlayMatch()
         {
             Winner = MovieA.GetWinner(MovieB);
+            Loser = MovieA.Id == Winner.Id ? MovieB : MovieA;
             MatchDate = DateTime.Now;
 
             return Winner;
