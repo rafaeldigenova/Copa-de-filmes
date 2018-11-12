@@ -1,0 +1,40 @@
+@import '../../framework';
+
+header {
+    background-color: $primary-color;
+    border-radius: $global-border-radius;
+    padding: 60px 0;
+    width: 100%;
+    text-align: center;
+
+    h1, h2, h3 {
+        color: $primary-font-color;
+        max-width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    hr {  
+        max-width: 100%;
+        width: 120px;
+    }
+
+    h1 {
+        color: darken($primary-font-color,20);
+        font-size: 11px;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 12px;
+        font-weight: thin;
+    }
+
+}

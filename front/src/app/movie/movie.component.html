@@ -1,0 +1,29 @@
+<section class="info">
+  <span> Selecionados {{selectedMoviesCount}} de 8 filmes</span>
+  <button class="btn btn-default" (click)="onSubmit($event)">Gerar meu campeonato </button>
+</section>
+<section class="movies">
+    <ul>
+      <li class="movie" *ngFor="let movie of movies">
+        <label>
+          <div class="movie-check">
+              <input type="checkbox" name="movies" value="{{movie.id}}" (click)="onChange(movie)" />
+          </div>
+          <div class="movie-info">
+            <span class="movie-title">{{movie.titulo}}</span>
+            <span class="movie-year">{{movie.ano}}</span>
+          </div>
+        </label>
+      </li>
+    </ul>
+    <ul *ngIf="loading">
+      <li class="movie loading-placeholder" ></li>
+      <li class="movie loading-placeholder" ></li>
+      <li class="movie loading-placeholder" ></li>
+      <li class="movie loading-placeholder" ></li>
+      <li class="movie loading-placeholder" ></li>
+      <li class="movie loading-placeholder" ></li>
+      <li class="movie loading-placeholder" ></li>
+      <li class="movie loading-placeholder" ></li>
+    </ul>
+</section>

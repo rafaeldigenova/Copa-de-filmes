@@ -1,0 +1,26 @@
+<section class="podium-movies">
+  <ul>
+    <li class="podium-movie" *ngFor="let movie of podiumMovies">
+      <div class="podium-movie-position">
+        <span>{{movie.posicao}}º</span>            
+      </div>
+      <div class="podium-movie-title">
+        <span>{{movie.titulo}}</span>
+      </div>
+    </li>
+  </ul>
+  <ul *ngIf="loading">
+    <li class="podium-movie">
+      <div class="podium-movie-position">1º</div>
+      <div class="podium-movie-title loading-placeholder"></div>
+    </li>
+
+    <li class="podium-movie">
+      <div class="podium-movie-position">2º</div>
+      <div class="podium-movie-title loading-placeholder"></div>
+    </li>
+  </ul>
+</section>
+<section class="info">
+  <button class="btn btn-default" (click)="onBackPressed($event)">Voltar</button>
+</section>

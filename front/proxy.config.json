@@ -1,0 +1,14 @@
+{
+  "/api/*": {
+    "target": "http://copafilmes.azurewebsites.net/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/teste/*": {
+    "target": "http://copa-de-filmes-rafa.azurewebsites.net/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}  

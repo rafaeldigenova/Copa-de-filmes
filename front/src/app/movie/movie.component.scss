@@ -1,0 +1,86 @@
+@import '../../framework';
+
+.info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    span {
+        color: $tertiary-font-color;
+    }
+}
+
+.movies {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        .movie {
+            background-color: $secondary-color;
+            border-radius: $global-border-radius;
+            list-style: none;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            width: 21%;
+
+            &.loading-placeholder {
+                min-height: 62px;
+            }
+
+            label {
+                align-items: center;
+                display: flex;
+                transition: transform .2s linear;
+                
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(-2px) translateY(-2px);
+                    
+                }
+
+                .movie-check,
+                .movie-info {
+                    padding: 10px;
+                }
+
+                .movie-info {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    font-size: 10px;
+
+                    .movie-title {
+                        color: $secondary-font-color;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width:992px){
+    .movie {
+        width: 31.3%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .movie {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .movie {
+        width: 100%;
+    }
+}

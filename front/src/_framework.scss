@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'animations';
+
+.btn {
+    background-color: $btn-color;
+    border: none;
+    border-radius: $global-border-radius;
+    color: $btn-font-color;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-transform: uppercase;    
+    transition: background-color .3s linear;
+    
+    
+    &:hover {
+        background-color: $btn-hover-color;
+        cursor: pointer;
+    }
+}
